@@ -4,7 +4,7 @@ import MovieListItem from "./MovieListItem";
 import MovieListFooter from "./MovieListFooter";
 
 const MovieList = (props) => {
-  const movies = useSelector((state) => state.movies); // bu bana  store icindeki movie objesini verir.
+  const movies = useSelector((store) => store.movieReducer.movies); // bu bana  store icindeki movie objesini verir.
   //const movies = [];
 
   return (
